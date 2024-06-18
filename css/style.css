@@ -1,0 +1,49 @@
+
+#home{
+    position: relative;
+    
+}
+
+.home{
+    position: absolute;
+    width: 30rem;
+    top: 50%;
+    left: 33.33%;
+    
+}
+#home-heading{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: aliceblue;
+    
+}
+.btn{
+    background-color: aquamarine;
+}
+
+.cities{
+    width: 13.5rem;
+    height: 13.5rem;
+    text-align: center;
+    border: 1px;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 40px #030303, 
+                -20px -20px -40px #ffffff;
+}
+
+#quick-links{
+    color: aliceblue;
+    background-color: darkslategrey;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
