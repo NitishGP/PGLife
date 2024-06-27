@@ -26,9 +26,9 @@
     width: 13.5rem;
     height: 13.5rem;
     text-align: center;
-    border: 1px;
+    
     border-radius: 50%;
-    border-style: solid;
+    
     margin: 2rem;
     display: flex;
     align-items: center;
@@ -37,13 +37,17 @@
                 -20px -20px -40px #ffffff;
 }
 
+.cities:hover{
+    transform: translateY(-30px);
+    transition: all 0.5s ease-in-out;
+    
+    background: linear-gradient(145deg, #e2e0e0, #ffffff);
+    box-shadow: 20px 20px 40px #030303, 
+                -20px -20px -40px #ffffff;
+}
+
 #quick-links{
     color: aliceblue;
     background-color: darkslategrey;
     text-align: center;
-}
-footer{
-    background-color: black;
-    text-align: center;
-    color: aliceblue;
 }
