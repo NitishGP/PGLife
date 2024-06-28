@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
@@ -32,6 +34,17 @@
             </div>
         </div>
     </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb py-2">
+            <li class="breadcrumb-item active" aria-current="page" style="padding-left: 1rem;">
+                <a href="index.html">Home</a>
+            </li>
+           
+            <li class="breadcrumb-item active" aria-current="page">
+                <a href="dashboard.html">My Profile</a>
+            </li>
+        </ol>
+    </nav>
     <section class="m-5">
         <div class="container-fluid" style="width: 60rem;">
             <header class="fs-2">My Profile</header>
@@ -40,7 +53,7 @@
                 <div class="col-8">
                     <h4>Nitish G Panda</h6>
                     <p>gobindanitish13@gmail.com</p>
-                    <p>9999999999</p>
+                    <p>9999999999</p> 
                     <p><a href="#">Edit profile</a></p>   
                 </div>
             </div>
@@ -68,12 +81,9 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="row p-3">
-            <div class="col">
-              <p>© 2024 Copyright PG Life.</p>
-            </div>
-    </footer>
+    <?php
+    include "includes/footer.php";
+    ?>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

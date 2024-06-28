@@ -6,34 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PGLife</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img style="width: 8rem;" src="img/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
+    <?php
+    include "includes/header.php";
+    ?>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
     <section>
         <div id="home">
             <img style="filter: brightness(50%);" src="img/bg.png" alt="">
@@ -67,22 +50,10 @@
             </div>
         </div>
     </section>
-    <section id="quick-links">
-        <br>
-        <p>PG in Delhi</p>
-        <p>PG in Bangalore</p>
-        <p>PG in Hyderabad</p>
-        <p>PG in Chennai</p>
-        <br>
-        <p>Launch a Complaint</p>
-        <br>
-    </section>
-    <footer>
-        <div class="row p-3">
-            <div class="col">
-              <p>© 2024 Copyright PG Life.</p>
-            </div>
-    </footer>
+    
+    <?php
+    include "includes/footer.php";
+    ?>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
