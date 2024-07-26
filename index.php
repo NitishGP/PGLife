@@ -11,6 +11,7 @@
 
 <body>
     <?php
+    session_start();
     include "includes/header.php";
  
     ?>
@@ -19,16 +20,12 @@
         <div id="home">
             <img style="filter: brightness(50%);" src="img/bg.png" alt="">
             <h3 id="home-heading">Happiness per Square Foot</h3>
-            <form class="d-flex home" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex home" method="GET" role="search" action="property_list.php">
+                <input class="form-control me-2" type="search" name="city" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
-    </section>
-    <a href="dashboard.php">dash</a>
-    <a href="property_detail.php">prop_detail</a>
-    <a href="property_list.php">prop_list</a>
-    <section>
+    
         <div class="container m-5" style="text-align: center;">
             <h2>Major Cities</h2>
             <div class="row">
@@ -38,13 +35,13 @@
                     </a>
                 </div>
                 <div class="col cities">
-                    <a href="property_list.php?city=Bangalore">
+                    <a href="property_list.php?city=Bengaluru">
                         <img style="width: 10rem;" src="img/bangalore.png" alt="">
                     </a>
                 </div>
                 <div class="col cities">
-                    <a href="property_list.php?city=Chennai">
-                        <img style="width: 10rem;" src="img/chennai.png" alt="">
+                    <a href="property_list.php?city=Mumbai">
+                        <img style="width: 10rem;" src="img/mumbai.png" alt="">
                     </a>
                 </div>
                 <div class="col cities">
@@ -60,6 +57,7 @@
    
     include "includes/footer.php";
     ?>
+    <script src="js/common.js"></script> 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

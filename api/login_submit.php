@@ -23,7 +23,8 @@ if(!$rows)
     exit;
 }
 
-$_SESSION['user_id']=$rows['id'];
+$_SESSION["user_id"]=$rows['id'];
+$_SESSION['name']=$rows['name'];
+header("Location:../index.php");
 ?>
 
-<a href="dashboard.php">Click here to go to dashboard</a>

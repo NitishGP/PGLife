@@ -4,7 +4,7 @@
     <br>
     <a style="text-decoration: none; color:aliceblue" href="property_list.php?city=Delhi">PG in Delhi</a><br>
     <a style="text-decoration: none; color:aliceblue" href="property_list.php?city=Hyderabad">PG in Hyderabad</a><br>
-    <a style="text-decoration: none; color:aliceblue" href="property_list.php?city=Chennai">PG in Chennai</a><br>
+    <a style="text-decoration: none; color:aliceblue" href="property_list.php?city=Mumbai">PG in Mumbai</a><br>
     <a style="text-decoration: none; color:aliceblue" href="property_list.php?city=Bangalore">PG in Bangalore</a><br>
 
     <br>

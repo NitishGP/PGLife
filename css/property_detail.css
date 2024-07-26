@@ -101,6 +101,10 @@
 
 .amenity-container {
     margin: 8px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
 }
 
 .amenity-container img {

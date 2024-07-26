@@ -1,34 +1,13 @@
-<?php
-    session_start();
-    require "includes/database_connect.php";
-    
-    $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : NULL;
-    $property_id = $_GET["property_id"];
-
-    $sql_1="SELECT * FROM properties WHERE id='$property_id';" ;
-    $result_1=mysqli_query($conn,$sql_1);
-    if(!$result_1){
-        echo "Something went wrong";
-        exit;
-    }
-
-    $property=mysqli_fetch_assoc($result_1);
-    if(!$property){
-        echo "Sorry! No property of this name listed here!";
-        exit;
-    }
-
-    ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=$property['name']?> | PG Life</title>
+    <title>Ganpati Paying Guest | PG Life</title>
 
-   
-    <?= include "includes/head_links.php" ?>
+    <?php
+    session_start();
+    include "includes/head_links.php" ?>
     <link href="css/property_detail.css" rel="stylesheet" />
 </head>
 
@@ -36,7 +15,6 @@
 
     <?php
     include "includes/header.php";
-
     ?>
    
     <div id="loading">
@@ -63,11 +41,11 @@
         </div>
         <a class="carousel-control-prev" href="#property-images" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#property-images" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
 
@@ -88,15 +66,15 @@
             </div>
         </div>
         <div class="detail-container">
-            <div class="property-name"><?=$property['name']?></div>
-            <div class="property-address"><?=$property['address']?></div>
+            <div class="property-name">Ganpati Paying Guest</div>
+            <div class="property-address">Police Beat, Sainath Complex, Besides, SV Rd, Daulat Nagar, Borivali East, Mumbai - 400066</div>
             <div class="property-gender">
-                <img src="img/<?=$property['gender']?>.png" />
+                <img src="img/unisex.png" />
             </div>
         </div>
         <div class="row no-gutters">
             <div class="rent-container col-6">
-                <div class="rent">Rs <?=$property['rent']?></div>
+                <div class="rent">Rs 8,500/-</div>
                 <div class="rent-unit">per month</div>
             </div>
             <div class="button-container col-6">
@@ -170,7 +148,7 @@
 
     <div class="property-about page-container property-summary">
         <h1>About the Property</h1>
-        <p><?=$property['description']?></p>
+        <p>Furnished studio apartment - share it with close friends! Located in posh area of Bijwasan in Delhi, this house is available for both boys and girls. Go for a private room or opt for a shared one and make it your own abode. Go out with your new friends - catch a movie at the nearest cinema hall or just chill in a cafe which is not even 2 kms away. Unwind with your flatmates after a long day at work/college. With a common living area and a shared kitchen, make your own FRIENDS moments. After all, there's always a Joey with unlimited supply of food. Remember, all it needs is one crazy story to convert a roomie into a BFF. What's nearby/Your New Neighborhood 4.0 Kms from Dwarka Sector- 21 Metro Station.</p>
     </div>
 
     <div class="property-rating property-summary">
