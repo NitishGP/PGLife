@@ -7,13 +7,16 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    position: relative;
     
 }
 footer{
     background-color: black;
     text-align: center;
     color: aliceblue;
+    
 }
+
 .nav-name{
     color: blue;
 }

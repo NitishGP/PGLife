@@ -57,9 +57,6 @@ $interested_users_properties = mysqli_fetch_all($result_3, MYSQLI_ASSOC);
     <?php
     include "includes/header.php";
     
-
-    
-
     ?>
 
     <nav aria-label="breadcrumb">
@@ -234,11 +231,15 @@ $interested_users_properties = mysqli_fetch_all($result_3, MYSQLI_ASSOC);
     </div>
 
     <?php
+    include "includes/footer.php";
     include "includes/signup_modal.php";
     include "includes/login_modal.php";
-    include "includes/footer.php";
+    
     ?>
 
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/property_list.js"></script>
 </body>
 

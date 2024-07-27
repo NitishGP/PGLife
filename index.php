@@ -26,8 +26,8 @@
             </form>
         </div>
     
-        <div class="container m-5" style="text-align: center;">
-            <h2>Major Cities</h2>
+        <div class="container m-5  " style="text-align: center;">
+            <h2 style="text-align: center">Major Cities</h2>
             <div class="row">
                 <div class="col cities">
                     <a href="property_list.php?city=Delhi">
@@ -55,10 +55,13 @@
 
     <?php
    
-    include "includes/footer.php";
+   include "includes/footer.php";
+   include "includes/signup_modal.php";
+   include "includes/login_modal.php";
     ?>
-    <script src="js/common.js"></script> 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </body>
 
 </html>

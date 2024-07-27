@@ -69,7 +69,7 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
     text-align: center;
     
     border-radius: 50%;
-    height: 1000px;
+    height: 100px;
     width: 100px;
     line-height: 100px;"></i>
             </div>
@@ -175,9 +175,15 @@ $interested_properties = mysqli_fetch_all($result_2, MYSQLI_ASSOC);
     }
     ?>
 
+
     <?php
     include "includes/footer.php";
+    include "includes/signup_modal.php";
+    include "includes/login_modal.php";
     ?>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>

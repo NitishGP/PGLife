@@ -22,28 +22,28 @@ window.addEventListener("load", function(){
     });
 }); 
     
-// window.addEventListener("load", function(){
-//     var login_form = document.getElementById("login-form");
-//     login_form.addEventListener("submit", function(e){
-//         var XHR = new XMLHttpRequest();
-//         var form_data = new FormData();
+window.addEventListener("load", function(){
+    var login_form = document.getElementById("login-form");
+    login_form.addEventListener("submit", function(e){
+        var XHR = new XMLHttpRequest();
+        var form_data = new FormData();
 
-//         //on success
-//         XHR.addEventListener("load", login_success);
+        //on success
+        XHR.addEventListener("load", login_success);
 
-//         //on error
-//         XHR.addEventListener("error", on_error);
+        //on error
+        XHR.addEventListener("error", on_error);
 
-//         //set up request
-//         XHR.open("POST", "api/login_submit.php");
+        //set up request
+        XHR.open("POST", "api/login_submit.php");
 
-//         //form_data is send with req
-//         XHR.send(form_data);
+        //form_data is send with req
+        XHR.send(form_data);
 
-//         document.getElementById("loading").style.display="block";
-//         e.preventDefault();
-//     });
-// });
+        document.getElementById("loading").style.display="block";
+        e.preventDefault();
+    });
+});
 
 var signup_success = (event) =>{
     document.getElementById("loading").style.display="none";
@@ -57,17 +57,17 @@ var signup_success = (event) =>{
     }
 };
 
-// var login_success = (event) =>{
-//     document.getElementById("loading").style.display="none";
+var login_success = (event) =>{
+    document.getElementById("loading").style.display="none";
 
-//     var response = JSON.parse(event.target.responseText);
-//     if(response.success){
-//         alert(response.message);
+    var response = JSON.parse(event.target.responseText);
+    if(response.success){
+        alert(response.message);
         
-//     }else{
-//         alert(response.message);
-//     }
-// };
+    }else{
+        alert(response.message);
+    }
+};
 
 var on_error = function(e){
     document.getElementById("loading").style.display = 'none';
