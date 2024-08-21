@@ -60,7 +60,7 @@
    include "includes/login_modal.php";
     ?>
     <script type="text/javascript" src="js/common.js"></script> 
-    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
 </body>
 
